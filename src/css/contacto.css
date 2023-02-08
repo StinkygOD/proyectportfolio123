@@ -13,42 +13,37 @@ body {
 }
 
 #recurso-1 {
+  size: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
+}
+
+.imgs{
+  margin-top: -450px;
 }
 
 #logo-123 {
   opacity: 0.8;
-  width: 13%;
+  width: 15%;
   z-index: 2;
-  position: absolute;
-  margin-left: -1100px;
-  transform: translate(18%, 0%);
-  margin-top: 80px;
-  -webkit-transform: translate(18%, 0%);
-  -moz-transform: translate(18%, 0%);
-  -ms-transform: translate(18%, 0%);
-  -o-transform: translate(18%, 0%);
 }
 
 #sergio-hr {
+  margin-top: 10px;
   z-index: 3;
-  position: absolute;
   opacity: 0.6;
-  width: 101%;
-  margin-left: -970px;
-  margin-top: -199px;
+  width: 99%;
 }
 
 .header {
-  align-items: center;
-  padding: 0 40px;
-  white-space: nowrap;
-  height: 60px;
-  font-size: 14px;
-  justify-content: space-between;
   font-family: "Roboto Slab", serif;
-  font-weight: 800;
+    font-weight: 800;
+    display: flex;
+    margin-top: 60px;
+    gap: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-menu {
@@ -82,6 +77,7 @@ body {
 }
 
 .container{
+  margin-left: 150px;
   font-family: "Roboto Slab", serif;
   font-weight: lighter;
 	position: relative;
@@ -90,9 +86,8 @@ body {
 	justify-content: center;
 	align-items: center;
   text-align: center;
-	padding: 0px 580px;
+	padding: 100px 400px;
 }
-
 .container:after{
 	content: '';
 	position: absolute;
@@ -104,7 +99,7 @@ body {
 }
 .contact-box{
 	max-width: 850px;
-	display: grid;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -114,14 +109,12 @@ body {
 p{
   font-family: "Roboto Slab", serif;
   font-weight: bolder;
-  margin-top: 50px;
-  margin-bottom: 25px;
   color: #ff9f63;
 	position: relative;
 	padding: 0 0 10px;
 }
 
-p:after{
+/**p:after{
     content: '';
     position: absolute;
     left: 50%;
@@ -135,7 +128,11 @@ p:after{
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}**/
 
 .field{
   color: #25282d;
@@ -147,7 +144,7 @@ p:after{
   outline: none;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  margin-bottom: 22px;
+  margin-bottom: 32px;
   transition: .3s;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -166,20 +163,19 @@ textarea{
 .social-1{
   font-family: "Roboto Slab", serif;
   display: flex;
-  margin-bottom: 25px;
-  font-size: 20px;
 }
 
 .social-1 i{
   color: #ff9f63;
-  font-size: 43px;
-  margin-left: 100px;
+  font-size: 30px;
+  margin-left: 150px;
+  margin-bottom: 20px;
 }
 
-h4{
-  font-weight: lighter;
-  margin-top: 6px;
-  margin-left: 10px;
+.social-1 h4{
+  margin-left: 20px;
+  color: #616a72;
+  margin-top: 3px;
 }
 
 .btn{
@@ -207,18 +203,77 @@ h4{
     background-color: #fff;
 }
 
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
-	}
-	.left{
-		height: 200px;
-	}
+/*@media screen and (min-width: 600px){
+  #recurso-1{
+    size: 100%;
+  }
+  #logo123{
+    size: 60%;
+  }
+  .sergio-hr{
+    size: 90%;
 }
+	.contact-box{
+    margin-top: 0px;
+		grid-template-columns: 1fr;
+    margin-left: -550px;
+	}
+  .header-menu a:not(:first-child) {
+    margin-left: 50px;
+  }
+  .social-1{
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .social-1 i{
+    color: #ff9f63;
+    font-size: 43px;
+    margin-left: 50px;
+  }
+  .links i {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    margin-top: 50px;
+    transition: color 0.2s ease 0s;
+    -webkit-transition: color 0.2s ease 0s;
+    -moz-transition: color 0.2s ease 0s;
+    -ms-transition: color 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s;
+  }
+  .btn{
+    margin-top: 0px;
+  }
+  
+}*/
+
+/*@media screen and (max-width: 1920px){
+  .imgs{
+    margin-top: -470px;
+  }
+
+  .contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-box p{
+    margin-top: 30px;
+  }
+
+  form{
+    margin-left: 650px;
+}
+}*/
 
 #recurso-22 {
   width: 100%;
-  margin-top: 160px;
+  margin-top: 90px;
+  height: 20vh;
 }
 
 .links {
@@ -226,7 +281,7 @@ h4{
   justify-content: center;
   align-items: center;
   margin-left: -90px;
-  margin-top: -170px;
+  margin-top: -120px;
 }
 
 .links a {
@@ -234,6 +289,7 @@ h4{
 }
 
 .links i {
+  display: flex;
   color: #fff;
   margin-left: 80px;
   font-size: 50px;
